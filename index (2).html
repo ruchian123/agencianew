@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agencia de Viajes Destinos Felices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f2f2f2;}
+        header { background: #00aaff; color: white; padding: 2rem 1rem; text-align: center;}
+        nav { background: #0077aa; padding: 1rem; text-align: center;}
+        nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold;}
+        .container { max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px #0001;}
+        h2 { color: #0077aa; }
+        .destinos { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1rem;}
+        .destino { flex: 1 1 250px; background: #f7fbff; border-radius: 8px; padding: 1rem; box-shadow: 0 1px 4px #0001;}
+        .destino img { width: 100%; border-radius: 6px;}
+        footer { background: #0077aa; color: white; text-align: center; padding: 1rem; margin-top: 2rem;}
+        @media (max-width: 700px) {
+            .destinos { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes Destinos Felices</h1>
+        <p>¡Conoce el mundo con nosotros!</p>
+    </header>
+    <nav>
+        <a href="#destinos">Destinos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="destinos">
+            <h2>Destinos Populares</h2>
+            <div class="destinos">
+                <div class="destino">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Playa Cancún">
+                    <h3>Cancún</h3>
+                    <p>Disfruta de las mejores playas del Caribe mexicano con todo incluido.</p>
+                </div>
+                <div class="destino">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Paris">
+                    <h3>París</h3>
+                    <p>Descubre la ciudad del amor, su cultura, arte y gastronomía única.</p>
+                </div>
+                <div class="destino">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Tokio">
+                    <h3>Tokio</h3>
+                    <p>Vive la experiencia de una ciudad moderna llena de tradición y tecnología.</p>
+                </div>
+            </div>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Paquetes completos de viaje</li>
+                <li>Reservación de vuelos y hoteles</li>
+                <li>Seguro de viaje</li>
+                <li>Asesoría personalizada</li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Agencia de Viajes Destinos Felices. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
